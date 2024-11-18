@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import navLogo from '../assets/images/webp/nav-logo.webp';
 import { NAV_DATA_LINK } from '../utils/Helper';
-import lineImg from '../assets/images/webp/line-image.webp'
+
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,12 +34,11 @@ const Header = () => {
     }, [isMenuOpen]);
 
     return (
-        <div className="md:h-[90px] sm:h-16 h-14 flex w-full mx-auto items-center bg-ink-black pt-[18px] pb-4 relative z-20">
+        <div className="md:h-[90px] sm:h-16 h-14 flex w-full flex-col mx-auto items-center bg-ink-black pt-[18px] pb-4 relative z-20">
             <div className='container'>
-                <div className='w-full'><img src={lineImg} alt="" className='w-full' /></div>
                 <div className='flex justify-between items-center'>
                     <div className="flex items-center gap-[59px]">
-                        <a href="/"><img src={navLogo} alt="nav-logo" className='md:max-w-[177.26px]' /></a>
+                        <a href="/"><img src={navLogo} alt="nav-logo" className='md:max-w-[177.26px] max-w-[130px]' /></a>
                             <div className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'} z-10 gap-6 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-black max-lg:transition-all duration-300 flex items-center max-lg:min-h-screen`}>
                                 <ul className='flex flex-col lg:flex-row gap-6 items-center lg:items-center z-10'>
                                     <li className="relative">
@@ -93,9 +92,15 @@ const Header = () => {
                                             </a>
                                         </li>
                                     ))}
-                                    <a href="#" className='lg:hidden block relative rounded-lg border border-vibrantBlue font-raleway transition duration-300 text-base leading-[18.78px] bg-white py-3 px-8 font-medium text-vibrantBlue z-10 hover:bg-vibrantBlue hover:text-white hover:border hover:border-white'>Enter App</a>
+                                <a href="#" className='rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Docs</a>
+                                <a href="#" className='rounded-full py-[14px] bg-orange px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Book a Demo</a>
+
                                 </ul>
                             </div>
+                    </div>
+                    <div className='flex gap-[10px]'>
+                        <a href="#_" className="rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden text-base font-medium text-primary-white transition duration-300">Docs</a>
+                        <a href="#_" className="rounded-full py-[14px] bg-orange px-7 lg:block hidden cursor-pointer text-base font-medium text-primary-white">Book a Demo</a>
                     </div>
                     <div
                         onClick={toggleMenu}
@@ -114,18 +119,9 @@ const Header = () => {
                             </>
                         )}
                     </div>
-                    <div className='flex gap-[10px]'>
-                        <a href="#_" className="rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10">
-                            <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-vibrantBlue top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                            <span className="relative font-raleway text-vibrantBlue transition duration-300 group-hover:text-white ease text-base leading-[18.78px]">Docs</span>
-                        </a>
-                        <a href="#_" className="rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10">
-                            <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 -translate-x-20 bg-vibrantBlue top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
-                            <span className="relative font-raleway text-vibrantBlue transition duration-300 group-hover:text-white ease text-base leading-[18.78px]">Book a Demo</span>
-                        </a>
-                   </div>
                 </div>
             </div>
+            <div className='w-full linear-border mt-4'></div>
         </div>
     );
 };
