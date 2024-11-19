@@ -85,22 +85,22 @@ const Header = () => {
                                         <li key={index} onClick={toggleMenu}>
                                             <a
                                                 target='blank'
-                                                className='font-bold text-primary-white lg:text-custom2xl lg:leading-7 text-lg relative after:absolute hover:after:bg-white hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[2px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-300'
+                                                className='font-bold text-primary-white lg:text-custom2xl lg:leading-7 text-lg relative after:absolute hover:after:bg-white hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-300'
                                                 href={link.href}
                                             >
                                                 {link.label}
                                             </a>
                                         </li>
                                     ))}
-                                <a href="#" className='rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Docs</a>
-                                <a href="#" className='rounded-full py-[14px] bg-orange px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Book a Demo</a>
+                                <a href="#" className='rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-[14px] bg-ink-black px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Docs</a>
+                                <a href="#" className='rounded-full py-[14px] bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Book a Demo</a>
 
                                 </ul>
                             </div>
                     </div>
                     <div className='flex gap-[10px]'>
-                        <a href="#_" className="rounded-full border border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden text-base font-medium text-primary-white transition duration-300">Docs</a>
-                        <a href="#_" className="rounded-full py-[14px] bg-orange px-7 lg:block hidden cursor-pointer text-base font-medium text-primary-white">Book a Demo</a>
+                        <a href="#_" className="rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden text-base font-medium text-primary-white transition">Docs</a>
+                        <a href="#_" className="rounded-full py-[14px]  bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:block hidden cursor-pointer text-base font-medium text-primary-white">Book a Demo</a>
                     </div>
                     <div
                         onClick={toggleMenu}

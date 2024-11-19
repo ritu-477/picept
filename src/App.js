@@ -21,18 +21,22 @@ import Unmatched from './components/Unmatched';
 function App() {
   return (
     <>
-      <Hero/>
-      {/* <Header /> */}
-      {/* <Trusted/>
+      <Hero />
+      <Trusted /> 
       <RequestThrough />
       <TrustThrough />
       <Mission />
       <SmartRouting />
+      {/* <PiceptDelivers /> */}
+      {/* <Header /> */}
+      {/* <Trusted/>
+      <RequestThrough />
+ 
+ 
       <AiWithout />
       <Unmatched />
       <AiTrust />
       <EndToEnd />
-      <PiceptDelivers />
       <PiceptRated />
       <PiceptPricing />
       <GetTouch />
