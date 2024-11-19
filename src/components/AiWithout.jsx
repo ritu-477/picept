@@ -7,7 +7,7 @@ import CommonButton from '../common/CommonButton'
 
 const AiWithout = () => {
   return (
-    <div>
+    <div className='lg:pt-[61px] md:pt-14 sm:pt-12 pt-6 md:pb-[68px] sm:pb-12 pb-6'>
       <div className='container'>
         <div className='lg:py-[66px] md:py-12 sm:py-8 py-6 px-6 rounded-[32px] bg-light-white'>
           <div className='flex lg:flex-row flex-wrap -mx-3 justify-between flex-col-reverse'>
