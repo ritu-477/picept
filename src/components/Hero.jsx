@@ -15,11 +15,11 @@ const Hero = () => {
               <div className='container'>
                   <div className='flex flex-col max-xl:justify-center max-xl:items-center'>
                       <div className='xl:w-[45%] w-full flex flex-col justify-center'>
-                          <h1 className='xl:text-custom-7xl xl:leading-custom-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-primary-white xl:max-w-[513px]'>Smart Routing, One Unified API</h1>
-                          <PrimaryPara className='pt-4 xl:max-w-[514px] w-full' text={"Cut LLM Costs by Up to 99%, Evaluate AI Performance, Ensure Compliance, Build Trust, and Gain Superior Visibility Across Global Providers and Your Data"} />
-                          <div className='flex gap-[10px] pt-6 sm:pt-8 md:pt-12'>
-                              <CommonButton className='bg-orange hover:bg-white hover:text-orange duration-700' text='Book a Demo' />
-                              <CommonButton className='bg-ink-black border hover:bg-white hover:text-ink-black duration-700 border-primary-white' text='Book a Demo' />
+                          <h1 className='xl:text-custom-7xl xl:leading-custom-8xl lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-primary-white xl:max-w-[513px] max-xl:text-center'>Smart Routing, One Unified API</h1>
+                          <PrimaryPara className='pt-4 xl:max-w-[514px] w-full max-xl:text-center' text={"Cut LLM Costs by Up to 99%, Evaluate AI Performance, Ensure Compliance, Build Trust, and Gain Superior Visibility Across Global Providers and Your Data"} />
+                          <div className='flex max-xl:justify-center gap-[10px] pt-6 sm:pt-8 md:pt-12'>
+                              <CommonButton className='bg-orange hover:bg-white hover:text-orange duration-700 py-3' text='Book a Demo' />
+                              <CommonButton className='bg-ink-black border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-3' text='Join Our Waitlist' />
                           </div>
                       </div>
                       <div className='xl:hidden block mt-6'>

@@ -27,9 +27,9 @@ function App() {
       <TrustThrough />
       <Mission />
       <SmartRouting />
+      <AiWithout />
       {/* <PiceptDelivers /> */}
       {/* <Trusted/>
-      <AiWithout />
       <Unmatched />
       <AiTrust />
       <EndToEnd />

@@ -92,15 +92,15 @@ const Header = () => {
                                             </a>
                                         </li>
                                     ))}
-                                <a href="#" className='rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-[14px] bg-ink-black px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Docs</a>
-                                <a href="#" className='rounded-full py-[14px] bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Book a Demo</a>
+                                <a href="#" className='rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-3 bg-ink-black px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Docs</a>
+                                <a href="#" className='rounded-full py-3 bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:hidden block overflow-hidden relative group cursor-pointer text-base font-medium text-primary-white z-10'>Book a Demo</a>
 
                                 </ul>
                             </div>
                     </div>
                     <div className='flex gap-[10px]'>
-                        <a href="#_" className="rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-[14px] bg-ink-black px-7 lg:block hidden text-base font-medium text-primary-white transition">Docs</a>
-                        <a href="#_" className="rounded-full py-[14px]  bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:block hidden cursor-pointer text-base font-medium text-primary-white">Book a Demo</a>
+                        <a href="#_" className="rounded-full border hover:bg-white hover:text-ink-black duration-700 border-primary-white py-3 bg-ink-black px-7 lg:block hidden text-base font-medium text-primary-white transition">Docs</a>
+                        <a href="#_" className="rounded-full py-3 bg-orange hover:bg-white hover:text-orange duration-700 px-7 lg:block hidden cursor-pointer text-base font-medium text-primary-white">Book a Demo</a>
                     </div>
                     <div
                         onClick={toggleMenu}
