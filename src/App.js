@@ -28,11 +28,7 @@ function App() {
       <Mission />
       <SmartRouting />
       {/* <PiceptDelivers /> */}
-      {/* <Header /> */}
       {/* <Trusted/>
-      <RequestThrough />
- 
- 
       <AiWithout />
       <Unmatched />
       <AiTrust />
