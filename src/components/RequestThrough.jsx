@@ -18,7 +18,7 @@ const RequestThrough = () => {
                                  }`}
                             >
                                 <div className="flex flex-col">
-                                    <div className="flex items-center justify-center">
+                                    <div className="flex items-center gap-2 justify-center">
                                         <p className="text-primary-white font-medium md:text-4xl text-3xl lg:text-custom-5xl lg:leading-custom-6xl">
                                             {item.value}
                                         </p>
@@ -37,7 +37,7 @@ const RequestThrough = () => {
                                     }`}
                             >
                                 <div className='flex flex-col'>
-                                    <div className='flex items-center justify-center'>
+                                    <div className='flex items-center gap-2 justify-center'>
                                         <p className="text-primary-white font-medium md:text-4xl text-2xl lg:text-custom-5xl lg:leading-custom-6xl">
                                             {obj.value1}
                                         </p>

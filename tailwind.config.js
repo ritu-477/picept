@@ -31,7 +31,7 @@ module.exports = {
         'dark-gray': "#121212",
         'primary-gray': "#252525",
         'border-primary-gray': "#BBBBBB4D",
-        'light-orange': "#EF5B241A",
+        'light-orange': "#281914  ",
         'light-white': "#FFFFFF05",
         'transparent-black': "#BBBBBB05",
         'button-bg': "#2C2B2B",
@@ -39,11 +39,17 @@ module.exports = {
         'transparent-gray': "#393939",
         'tab-button': "#4B4B4B",
         'border-transparent': "#505050",
+        'green': "#46EF24",
+        'midnight-black': "#292828", 
+        'border-midnight': "#555554",
+        'charcoal-black': "#171616",
+
       },
 
       fontSize: {
         'custom2xl': "22px",
         'custom3xl': "28px",
+        'custom-4xl': "32px",
         'custom-7xl': "70px",
         'custom-5xl': "54px",
       },
@@ -51,7 +57,8 @@ module.exports = {
       lineHeight: {
         'custom-lg': "22.4px",
         'custom-xl': "39.4px",
-        'custom-5xl': "44.8px",
+        'custom-4xl': "44.8px",
+        'custom-5xl': "50.4px",
         'custom-6xl': "64.8px",
         'custom-7xl': "72px",
         'custom-8xl': "84px",
@@ -61,10 +68,13 @@ module.exports = {
         'hero': "url('./assets/images/webp/hero-bg.webp')",
         'requested': "url('./assets/images/webp/requested-bg.webp')",
         'trust': "url('./assets/images/webp/trusted-through-bg.webp')",
+        'unmatched': "url('./assets/images/webp/unmatched-bg.webp')",
       },
 
       boxShadow: {
         'custom3xl': "0px_4px_4px_0px_#FFFFFF40",
+        'custom4xl': "0px_11px_30px_0px_#0000004F", 
+        'custom5xl': "0px_11px_30px_0px_#0000003D", 
 
       },
     },

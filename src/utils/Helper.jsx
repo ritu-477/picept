@@ -1,9 +1,9 @@
-import broadcomImg from '../assets/images/webp/broadcom-slider.webp';
-import spacexImg from '../assets/images/webp/spacex-slider.webp';
-import pgImg from '../assets/images/webp/p&g-slider.webp';
-import iitImg from '../assets/images/webp/iit-slider.webp';
-import streeImg from '../assets/images/webp/stree-slider.webp';
-import ciscoImg from '../assets/images/webp/cisco-slider-image.webp';
+import broadcomImg from '../assets/images/webp/broadcom-image.webp';
+import spacexImg from '../assets/images/webp/spacex-image.webp';
+import pgImg from '../assets/images/webp/p&g-image.webp';
+import iitImg from '../assets/images/webp/iit-image.webp';
+import streeImg from '../assets/images/webp/stree-image.webp';
+import ciscoImg from '../assets/images/webp/cisco-image.webp';
 import trustImg from '../assets/images/webp/trust-image.webp';
 import protectImg from '../assets/images/webp/protect-image.webp';
 import complyImg from '../assets/images/webp/comply-image.webp';
@@ -27,13 +27,13 @@ export const NUMBER_DATA = [
     {
         value: "+110%",
         description: "Speed",
-        iconName: "downArrow",
+        iconName: "upArrow",
     },
 
     {
         value: "-95%",
         description: "Latency",
-        iconName: "upArrow",
+        iconName: "downArrow",
     },
 
     {
@@ -67,8 +67,8 @@ export const REQUEST_DATA = [
 ];
 
 export const CONTINUE_SLIDER_DATA = [
-    { src: broadcomImg, alt: "Broadcom Logo", maxWidth: "341px"},
-    { src: spacexImg, alt: "SpaceX Logo", maxWidth: "341px" },
+    { src: broadcomImg, alt: "Broadcom Logo", maxWidth: "312px"},
+    { src: spacexImg, alt: "SpaceX Logo", maxWidth: "314px" },
     { src: pgImg, alt: "P&G Logo", maxWidth: "73px" },
     { src: iitImg, alt: "IIT Logo", maxWidth: "134px" },
     { src: streeImg, alt: "Stree Logo", maxWidth: "72.68px" },
@@ -76,38 +76,38 @@ export const CONTINUE_SLIDER_DATA = [
 ];
 export const MISSION_CONTROL_CARDS = [
     {
-        icon: "every",
-        heading1: "Monitor Every Endpoint",
+        icon: "monitorEvery",
+        cardText: "Monitor Every Endpoint",
         paragraph1: "Track Al interactions in real-time, catch issues early, and optimize performance with detailed analytics-all from a single dashboard.",
     },
 
     {
         icon: "policies",
-        heading1: "Enforce Al Policies",
+        cardText: "Enforce Al Policies",
         paragraph1: "Set custom guardrails and stay compliant. Our automated system converts your policies into actionable. controls in minutes.",
     },
 
     {
         icon: "testing",
-        heading1: "Continuous Testing",
+        cardText: "Continuous Testing",
         paragraph1: "Battle-test your Al with production-grade data. Catch issues before they impact users and maintain consistent performance.",
     },
 
     {
         icon: "team",
-        heading1: "Team Collaboration",
+        cardText: "Team Collaboration",
         paragraph1: "Unite your Al initiatives. Manage policies, share insights, and coordinate responses from one central platform.",
     },
     
     {
         icon: "visibility",
-        heading1: "Complete Visibility",
+        cardText: "Complete Visibility",
         paragraph1: "Make data-driven decisions with intuitive visualizations, real-time metrics, and comprehensive performance tracking.",
     },
 
     {
         icon: "alerts",
-        heading1: "Smart Alerts",
+        cardText: "Smart Alerts",
         paragraph1: "Get instant notifications when it matters. Automated monitoring flags performance drops, compliance issues, and potential risks.",
     },
 ]
@@ -171,3 +171,47 @@ export const TAB_CONTENT = [
         image: evaluationImg, 
     },
 ];
+
+export const TAB_DATA = [
+    {
+        id: 'Quality',
+        heading: 'Router 1 vs GPT4',
+        stats: [
+            { label: 'Quality', value: '+7%', iconName: 'redClick' },
+            { label: 'Cost', value: '-89%', iconName: 'redClick' },
+            { label: 'Speed', value: '+251%', iconName: 'redClick' },
+            { label: 'Latency', value: '-35%', iconName: 'redClick' },
+        ],
+    },
+    {
+        id: 'Cost',
+        heading: 'Cost Analysis',
+        stats: [
+            { label: 'Quality', value: '+3%', iconName: 'redClick' },
+            { label: 'Cost', value: '-75%', iconName: 'redClick' },
+            { label: 'Speed', value: '+150%', iconName: 'redClick' },
+            { label: 'Latency', value: '-25%', iconName: 'redClick' },
+        ],
+    },
+    {
+        id: 'Speed',
+        heading: 'Speed Performance',
+        stats: [
+            { label: 'Quality', value: '+5%', iconName: 'redClick' },
+            { label: 'Cost', value: '-50%', iconName: 'redClick' },
+            { label: 'Speed', value: '+300%', iconName: 'redClick' },
+            { label: 'Latency', value: '-20%', iconName: 'redClick' },
+        ],
+    },
+    {
+        id: 'Latency',
+        heading: 'Latency Comparison',
+        stats: [
+            { label: 'Quality', value: '+2%', iconName: 'redClick' },
+            { label: 'Cost', value: '-40%', iconName: 'redClick' },
+            { label: 'Speed', value: '+100%', iconName: 'redClick' },
+            { label: 'Latency', value: '-10%', iconName: 'redClick' },
+        ],
+    },
+];
+

@@ -19,7 +19,7 @@ const Mission = () => {
                 <div className='w-20 h-20 rounded-2xl bg-light-orange flex justify-center items-center'>
                   <Icon svgClass={obj === index ? "" : ""} iconName={obj.icon} />
                 </div>
-                <p className='font-bold md:text-custom3xl text-xl md:leading-custom-xl text-primary-white pt-5 pb-4'>{obj.heading1}</p>
+                <p className='font-bold md:text-custom3xl text-xl md:leading-custom-xl text-primary-white pt-5 pb-4'>{obj.cardText}</p>
                 <p className='font-bold text-base md:text-xl text-grey max-w-[324px]'>{obj.paragraph1}</p>
               </div>
             </div>

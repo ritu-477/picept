@@ -56,19 +56,19 @@ const SmartRouting = () => {
                   </div>
                   <div className='flex max-w-[531px] w-full items-center overflow-x-auto scrollbar-hidden'>
                     <button
-                      className={`font-normal md:text-xl sm:text-base text-sm p-2 text-center sm:py-2 sm:px-4 text-primary-white border-r border-primary-white ${activeTab === 'PythonSDK' ? 'bg-tab-button' : ''}`}
+                      className={`font-normal whitespace-nowrap md:text-xl sm:text-base text-sm p-2 text-center sm:py-2 sm:px-4 text-primary-white border-r border-primary-white ${activeTab === 'PythonSDK' ? 'bg-tab-button' : ''}`}
                       onClick={() => setActiveTab('PythonSDK')}
                     >
                       Python SDK
                     </button>
                     <button
-                      className={`font-normal md:text-xl p-2 sm:text-base text-sm text-center sm:py-2 sm:px-8 text-primary-white border-r border-primary-white ${activeTab === 'OpenAISDK' ? 'bg-tab-button' : ''}`}
+                      className={`font-normal whitespace-nowrap md:text-xl p-2 sm:text-base text-sm text-center sm:py-2 sm:px-8 text-primary-white border-r border-primary-white ${activeTab === 'OpenAISDK' ? 'bg-tab-button' : ''}`}
                       onClick={() => setActiveTab('OpenAISDK')}
                     >
                       Open AI SDK
                     </button>
                     <button
-                      className={`font-normal md:text-xl sm:text-base p-2 text-sm text-center sm:py-2 sm:ps-4 sm:pr-[17px] text-primary-white ${activeTab === 'OpenAINodeSDK' ? 'bg-tab-button' : ''}`}
+                      className={`font-normal whitespace-nowrap md:text-xl sm:text-base p-2 text-sm text-center sm:py-2 sm:ps-4 sm:pr-[17px] text-primary-white ${activeTab === 'OpenAINodeSDK' ? 'bg-tab-button' : ''}`}
                       onClick={() => setActiveTab('OpenAINodeSDK')}
                     >
                       Open AI Node SDK

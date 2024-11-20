@@ -19,7 +19,7 @@ export const BackToTop = () => {
         <div className='relative'>
             {visible && (
                 <div
-                    className='border bg-light-black rounded-full p-2 sm:p-3 fixed bottom-4 right-4'
+                    className='border bg-light-black cursor-pointer z-10 rounded-full p-2 sm:p-3 fixed bottom-4 right-4'
                     onClick={scrollToTop}
                 >
                     <Icon iconName="doubleArrow" />

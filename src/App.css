@@ -1,27 +1,36 @@
-body{
+body {
   scroll-behavior: smooth !important;
   font-family: 'space grotesk';
   background: #0D0D0D;
 }
+
 .path-orange path {
   stroke: #EF5B24;
 }
 
 .path-grey path {
-  stroke: #898989 !important; 
+  stroke: #898989 !important;
 }
 
-.slick-next:before{
+.slick-next:before {
   display: none;
 }
 
-.slick-prev:before{
-display: none;
+.slick-prev:before {
+  display: none;
 }
 
-.slick-track{
+.slick-track {
   display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
   gap: 54px !important;
+}
+
+.linear-border {
+  border: 0.4px solid;
+  border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50.78%, rgba(255, 255, 255, 0) 100%);
+  border-image-slice: 1;
 }
 
 .slick-slide>div {

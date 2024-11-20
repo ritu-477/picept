@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { CONTINUE_SLIDER_DATA } from '../utils/Helper'
+import { CONTINUE_SLIDER_DATA } from '../utils/Helper';
 
 const Trusted = () => {
   const settings = {
@@ -18,7 +18,6 @@ const Trusted = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          infinite: true,
         },
       },
       {
@@ -42,15 +41,15 @@ const Trusted = () => {
     <div className="pt-[30px] lg:pb-[77px] md:pb-14 sm:pb-12 pb-6">
       <div className="container">
         <h3 className="lg:text-5xl sm:text-4xl text-2xl text-primary-white text-center">Trusted By Teams at</h3>
-        <div className="mt-8">
+        <div className="mt-12">
           <Slider {...settings}>
             {CONTINUE_SLIDER_DATA.map((logo, index) => (
-              <div key={index} className='md:mx-[27px] flex items-center'>
-                <img key={index}
+              <div key={index} className="!flex !items-center !justify-center h-[79px] ">
+                <img
                   src={logo.src}
                   alt={logo.alt}
                   className="object-contain"
-                  style={{ maxWidth: logo.maxWidth }}
+                  style={{ maxWidth: logo.maxWidth, width: '100%' }} 
                 />
               </div>
             ))}

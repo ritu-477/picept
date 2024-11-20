@@ -5,16 +5,17 @@ import CommonHeading from '../common/CommonHeading'
 import PrimaryPara from '../common/PrimaryPara'
 import CommonButton from '../common/CommonButton'
 import aiEllipse from '../assets/images/webp/mission-ellipse.webp'
-import aiRightEllipse from '../assets/images/webp/ai-right-ellipse.webp'
+import aiRightEllipse from '../assets/images/webp/right-ellipse-ai.webp'
 
 
 const AiWithout = () => {
   return (
     <div className='lg:pt-[61px] md:pt-14 sm:pt-12 pt-6 md:pb-[68px] sm:pb-12 pb-6 relative'>
+
       <img className='absolute left-0 -z-10 max-w-[411px] lg:block hidden h-[411px] top-[17%]' src={aiEllipse} alt="ai-ellipse" />
       <img className='absolute right-0 -z-10 max-w-[411px] lg:block hidden h-[411px] top-[-20%]' src={aiRightEllipse} alt="ai-ellipse" />
       <div className='container'>
-        <div className='lg:py-[66px] md:py-12 sm:py-8 py-6 px-6 rounded-[32px] bg-light-white'>
+        <div className='lg:py-[66px] md:py-12 sm:py-8 py-6 px-6 rounded-[32px] bg-light-white backdrop-blur-[20.6px]'>
           <div className='flex lg:flex-row flex-wrap -mx-3 justify-between flex-col-reverse'>
             <div className='lg:w-[58.33%] px-3 w-full flex flex-col justify-center max-lg:items-center max-lg:mt-5'>
                 <img src={providerImg} className='max-w-[618px] lg:-m-5 w-full' alt="provider-image" />

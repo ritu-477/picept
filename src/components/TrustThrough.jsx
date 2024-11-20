@@ -8,10 +8,10 @@ import  trustStar from '../assets/images/webp/trust-star.webp'
 const TrustThrough = () => {
   const [activeTab, setActiveTab] = useState(0); 
   return (
-    <div className='bg-trust bg-cover bg-no-repeat bg-center bg-light-white backdrop-blur-[20.6px] relative'>
-      <img className='absolute lg:block hidden left-[28px] max-w-[61.77px] top-[60px]' src={trustStar} alt="trust-star" />
+    <div className='bg-trust bg-cover bg-no-repeat bg-center bg-light-white relative'>
+      <img className='absolute lg:block hidden left-[28px] max-w-[61.77px] top-[165px]' src={trustStar} alt="trust-star" />
       <div className='container lg:py-[100px] md:py-20 sm:py-14 py-6'>
-        <div className='sm:py-9 sm:px-7 py-6 px-4 rounded-[32px] bg-light-white'>
+        <div className='sm:py-9 sm:px-7 py-6 px-4 rounded-[32px] bg-light-white backdrop-blur-[20.6px]'>
           <CommonHeading
             className='max-w-[726px] mx-auto text-center'
             text={"Trust Through Continuous AI Evaluation"}
@@ -27,15 +27,15 @@ const TrustThrough = () => {
                 onClick={() => setActiveTab(index)}
                 className={`font-normal lg:text-xl text-base justify-center items-center flex gap-2 ${activeTab === index
                     ? 'bg-button-bg text-primary-white rounded-[63px] border border-border-primary-gray'
-                    : 'bg-transparent-black text-grey'
-                  } ${tab.title === 'Evaluation API' ? 'py-[10px] px-6' : 'xl:px-12 px-4 md:px-4 py-3'
+                  : 'text-grey'
+                  } ${tab.title === 'Evaluation API' ? 'py-[10px] px-6 text-nowrap' : 'xl:px-12 px-4 md:px-4 py-3'
                   }`} 
               >
                 <Icon
                   svgClass={`${activeTab === index ? 'path-orange' : 'path-grey'
                     }`}
                   iconName={tab.icon}
-                />
+                />  
                 {tab.title}
               </button>
             ))}
@@ -44,11 +44,11 @@ const TrustThrough = () => {
             <div className='flex flex-row flex-wrap mt-8 -mx-3'>
               <div className='lg:w-1/2 px-3 w-full flex flex-col justify-center max-lg:items-center'>
                 <div className='lg:text-start'>
-                  <h3 className='font-bold text-2xl md:text-3xl text-primary-white max-w-[471px]'>
+                  <h3 className='font-bold text-2xl md:text-custom-4xl leading-custom-4xl text-primary-white max-w-[471px]'>
                     {TAB_CONTENT[activeTab].description}
                   </h3>
                   {TAB_CONTENT[activeTab].points.map((point, idx) => (
-                    <div key={idx} className='flex gap-2 mt-4'>
+                    <div key={idx} className='flex gap-2 mt-4 items-center'>
                       {activeTab !== TAB_CONTENT.findIndex(tab => tab.title === 'Evaluation API') && (
                         <Icon iconName="click" />
                       )}
