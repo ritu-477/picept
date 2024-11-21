@@ -4,6 +4,8 @@ import PrimaryPara from '../common/PrimaryPara';
 import Icon from '../common/Icons';
 import unmatchedImg from '../assets/images/webp/unmatched-image.webp';
 import { TAB_DATA } from '../utils/Helper';
+import unmatchedStar from '../assets/images/webp/unmatched-star.webp'
+import missionStar from '../assets/images/webp/mission-star.webp'
 
 const Unmatched = () => {
   const [activeTab, setActiveTab] = useState(TAB_DATA[0].id); 
@@ -15,7 +17,9 @@ const Unmatched = () => {
   const activeTAB_DATA = TAB_DATA.find((tab) => tab.id === activeTab);
 
   return (
-    <div className='bg-unmatched bg-center bg-no-repeat bg-cover'>
+    <div className='bg-unmatched bg-center bg-no-repeat bg-cover relative'>
+      <img className='absolute right-0 bottom-[-17%] lg:block hidden max-w-[100px]' src={missionStar} alt="mission-star" />
+      <img src={unmatchedStar} className='absolute lg:block hidden left-[28px] top-[65px] max-w-[61px]' alt="unmatched-star" />
       <div className='container pb-7  md:pt-14 sm:pt-12 pt-6 lg:pt-[72px]'>
         <div className='lg:py-12 md:px-8 sm:py-8 py-6 px-6 rounded-[32px] bg-light-white backdrop-blur-[20.6px]'>
           <CommonHeading className='text-center' text={'Unmatched Performance'} />

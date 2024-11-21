@@ -69,6 +69,8 @@ module.exports = {
         'requested': "url('./assets/images/webp/requested-bg.webp')",
         'trust': "url('./assets/images/webp/trusted-through-bg.webp')",
         'unmatched': "url('./assets/images/webp/unmatched-bg.webp')",
+        'trust': "url('./assets/images/webp/ai-trust-bg.webp')",
+
       },
 
       boxShadow: {

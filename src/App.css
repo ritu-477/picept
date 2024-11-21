@@ -50,3 +50,45 @@ body {
 
   overscroll-behavior-x: contain;
 }
+
+.slider-container {
+  width: calc(98px + 278px + 88px + 128px + 88px + 138px + 208px + 98px + 278px + 88px + 128px + 88px + 138px + 208px);
+  animation: scroll 25s linear infinite;
+}
+.bg-end-to-end{
+  background: linear-gradient(182.56deg, #0D0D0D 18.67%, #EF5B24 282.9%);
+}
+
+@media(min-width:768px) {
+  .slider-container {
+    width: calc(164px + 395px + 127px + 188px + 127px + 199px + 265px + 164px + 395px + 127px + 188px + 127px + 199px + 265px);
+    animation: scroll 20s linear infinite;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media(min-width:1024px) {
+  .border-gradient {
+    position: relative;
+  }
+
+  .border-gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    opacity: 30%;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, 0), #fff 50.78%, hsla(0, 0%, 100%, 0));
+  }
+}

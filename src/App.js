@@ -29,10 +29,10 @@ function App() {
       <SmartRouting />
       <AiWithout />
       <Unmatched />
-      {/* <PiceptDelivers /> */}
-      {/* <Trusted/>
       <AiTrust />
       <EndToEnd />
+      {/* <PiceptDelivers /> */}
+      {/* <Trusted/>
       <PiceptRated />
       <PiceptPricing />
       <GetTouch />

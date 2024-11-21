@@ -14,7 +14,7 @@ const RequestThrough = () => {
                         {NUMBER_DATA.map((item, index,) => (
                             <div
                                 key={index}
-                                className={`lg:w-[25%] w-[50%] px-3 flex justify-center items-center max-lg:mb-6 ${index !== NUMBER_DATA.length - 1 ? 'lg:border-r border-border-transparent' : ''
+                                className={`lg:w-[25%] w-[50%] px-3 flex justify-center items-center max-lg:mb-6 ${index !== NUMBER_DATA.length - 1 ? 'border-gradient' : ''
                                  }`}
                             >
                                 <div className="flex flex-col">
@@ -33,7 +33,7 @@ const RequestThrough = () => {
                         {REQUEST_DATA.map((obj, idx) => (
                             <div
                                 key={idx}
-                                className={`lg:w-[25%] w-[50%] px-3 flex justify-center items-center max-lg:mb-6 ${idx !== REQUEST_DATA.length - 1 ? 'lg:border-r border-border-transparent' : ''
+                                className={`lg:w-[25%] w-[50%] px-3 flex justify-center items-center max-lg:mb-6 ${idx !== REQUEST_DATA.length - 1 ? 'border-gradient' : ''
                                     }`}
                             >
                                 <div className='flex flex-col'>
