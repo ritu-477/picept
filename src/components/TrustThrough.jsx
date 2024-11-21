@@ -43,8 +43,8 @@ const TrustThrough = () => {
           <div className='mt-8'>
             <div className='flex flex-row flex-wrap mt-8 -mx-3'>
               <div className='lg:w-1/2 px-3 w-full flex flex-col justify-center max-lg:items-center'>
-                <div className='lg:text-start'>
-                  <h3 className='font-bold text-2xl md:text-custom-4xl leading-custom-4xl text-primary-white max-w-[471px]'>
+                <div className='flex flex-col'>
+                  <h3 className='font-bold text-2xl md:text-custom-4xl lg:text-start text-center leading-custom-4xl text-primary-white lg:max-w-[471px]'>
                     {TAB_CONTENT[activeTab].description}
                   </h3>
                   {TAB_CONTENT[activeTab].points.map((point, idx) => (

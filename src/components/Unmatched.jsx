@@ -35,29 +35,30 @@ const Unmatched = () => {
               </button>
             ))}
           </div>
-          <div className='flex flex-row flex-wrap -mx-3 lg:justify-between justify-center'>
-            {activeTAB_DATA && (
-              <div className='lg:w-1/3 w-full flex-col flex max-lg:justify-center max-lg:items-center'>
-                <p className='text-4xl max-lg:text-center leading-custom-5xl font-normal text-primary-white md:pb-7 pb-4'>
-                  {activeTAB_DATA.heading}
-                </p>
-                {activeTAB_DATA.stats.map((stat, index) => (
-                  <div className='flex items-start'>
+          <div className='flex flex-row flex-wrap -mx-3 lg:justify-between justify-center items-center'>
+  {activeTAB_DATA && (
+    <div className='lg:w-1/3 w-full flex-col flex justify-center items-center lg:items-start'>
+                <div className='flex flex-col'>
+                  <p className='text-4xl sm:text-2xl leading-custom-5xl font-normal lg:text-start text-center text-primary-white pb-4'>
+                    {activeTAB_DATA.heading}
+                  </p>
+                  {activeTAB_DATA.stats.map((stat, index) => (
                     <div className='flex gap-3 pb-4 items-center' key={index}>
                       <Icon className='' iconName={stat.iconName} />
                       <p className='text-custom3xl leading-custom-xl text-grey font-medium'>
                         {stat.label}: <span className='text-green'>{stat.value}</span>
                       </p>
                     </div>
-                    </div>
-                ))}
-              </div>
-            )}
-            <div className='lg:w-1/2 w-full flex-col flex max-lg:justify-center max-lg:items-center max-lg:mt-5'>
-              <p className='text-xl text-grey font-bold pb-4'>Quality V/S Price</p>
-              <img className='rounded-[32px] shadow-custom4xl w-full max-w-[558px]' src={unmatchedImg} alt='unmatched-image' />
-            </div>
-          </div>
+                  ))}
+      </div>
+    </div>
+  )}
+  <div className='lg:w-1/2 w-full flex-col flex max-lg:justify-center max-lg:items-center mt-5'>
+    <p className='text-xl text-grey font-bold pb-4'>Quality V/S Price</p>
+    <img className='rounded-[32px] shadow-custom4xl w-full' src={unmatchedImg} alt='unmatched-image' />
+  </div>
+</div>
+
         </div>
       </div>
     </div>
