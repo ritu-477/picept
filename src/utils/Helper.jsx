@@ -9,6 +9,11 @@ import protectImg from '../assets/images/webp/protect-image.webp';
 import complyImg from '../assets/images/webp/comply-image.webp';
 import monitorImg from '../assets/images/webp/monitor-image.webp';
 import evaluationImg from '../assets/images/webp/evaluation-image.webp';
+import saasImg from '../assets/images/webp/saas-image.webp'
+import apiImg from '../assets/images/webp/saas-image.webp'
+import aiPerformanceImg from '../assets/images/webp/saas-image.webp'
+import aiDeliversImg from '../assets/images/webp/saas-image.webp'
+import openFoldersImg from '../assets/images/webp/saas-image.webp'
 
 
 export const NAV_DATA_LINK = [
@@ -214,4 +219,235 @@ export const TAB_DATA = [
         ],
     },
 ];
+
+export const PICEPT_DELIVER_DATA_LIST = [
+    {
+        heading: "Blazing fast & efficient Routing",
+        title: "Blazing fast & efficient Routing",
+        description:
+            "Our service executes in just 10ms, slashes API costs by up to 99%, boosts speed, and reduces overall latency",
+        image: saasImg ,
+    },
+    {
+        heading: "Trust Through Intelligence",
+        title: "Trust Through Intelligence",
+        description:
+            "Deploy complaint AI in minutes, not months. Reduce complaince overhead by 90%. ",
+        image: openFoldersImg,
+    },
+    {
+        heading: "One API, Unlimited Potential",
+        title: "One API, Unlimited Potential",
+        description:
+            "Access 100+ Al models through a single endpoint. Mange Access at user and organization level and access new models at no time.",
+        image: apiImg,
+    },
+    {
+        heading: "Al Performance, Guaranteed",
+        title: "Al Performance, Guaranteed",
+        description:
+            "Detect issues, validate outputs, and ensure quality automatically.",
+        image: aiPerformanceImg,
+    },
+    {
+        heading: "Al Observability That Never Sleeps",
+        title: "Al Observability That Never Sleeps",
+        description:
+            "Full visibility into Al operations. Track performance, costs, and compliance in real-time.",
+        image: aiDeliversImg,
+    },
+];
+
+export const PICEPT_RATED_DATA = [
+    {
+        id: 1,
+        rating: 5,
+        feedback:
+            "Picept slashed our LLM costs by routing requests to the most affordable models without compromising quality.",
+        name: "John Rivera",
+        role: "Web Developer",
+        image: require("../assets/images/webp/john-web-developer.webp"),
+    },
+
+    {
+        id: 2,
+        rating: 5,
+        feedback:
+            "The ability to automatically convert our policies into evaluation criteria has transformed how we manage AI safety. What used to take weeks now takes minutes.",
+        name: "Sarah Chen",
+        role: "Chief Security Officer",
+        image: require("../assets/images/webp/sarah-chief.webp"),
+    },
+
+    {
+        id: 3,
+        rating: 5,
+        feedback:
+            "Real-time protection against harmful content gives us peace of mind. Their system caught several potential data leaks that our previous solution missed.",
+        name: "Michael Thompson",
+        role: "Head of Risk Management",
+        image: require("../assets/images/webp/michael-head.webp"),
+    },
+
+    {
+        id: 1,
+        rating: 5,
+        feedback:
+            "Picept slashed our LLM costs by routing requests to the most affordable models without compromising quality.",
+        name: "John Rivera",
+        role: "Web Developer",
+        image: require("../assets/images/webp/john-web-developer.webp"),
+    },
+
+    {
+        id: 2,
+        rating: 5,
+        feedback:
+            "The ability to automatically convert our policies into evaluation criteria has transformed how we manage AI safety. What used to take weeks now takes minutes.",
+        name: "Sarah Chen",
+        role: "Chief Security Officer",
+        image: require("../assets/images/webp/sarah-chief.webp"),
+    },
+    
+    {
+        id: 3,
+        rating: 5,
+        feedback:
+            "Real-time protection against harmful content gives us peace of mind. Their system caught several potential data leaks that our previous solution missed.",
+        name: "Michael Thompson",
+        role: "Head of Risk Management",
+        image: require("../assets/images/webp/michael-head.webp"),
+    },
+    
+];
+
+export const FORM_DATA = [
+    {
+        name: 'firstName',
+        label: 'First Name',
+        type: 'text',
+        placeholder: 'Enter your first name',
+        validation: { required: 'First name is required' },
+    },
+    {
+        name: 'lastName',
+        label: 'Last Name',
+        type: 'text',
+        placeholder: 'Enter your last name',
+        validation: { required: 'Last name is required' },
+    },
+    {
+        name: 'email',
+        label: 'Email',
+        type: 'email',
+        placeholder: 'Enter your email',
+        validation: {
+            required: 'Email is required',
+            pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: 'Enter a valid email address',
+            },
+        },
+    },
+    {
+        name: 'message',
+        label: 'Message',
+        type: 'textarea',
+        placeholder: 'Enter your message',
+        validation: { required: 'Message is required' },
+    },
+];
+
+ export const FOOTER_DATA = [
+    {
+        title: 'Product',
+        links: [
+            { text: 'Smart Routing', href: '' },
+            { text: 'Universal API', href: '' },
+            { text: 'LLM Observability', href: '' },
+        ],
+    },
+    {
+        title: 'Company',
+        links: [
+            { text: 'Pricing', href: '' },
+            { text: 'About Us', href: '' },
+            { text: 'Blogs', href: '' },
+            { text: 'Book A Demo', href: '' },
+        ],
+    },
+    {
+        title: 'Resources',
+        links: [
+            { text: 'Careers', href: '' },
+            { text: 'Community', href: '' },
+            { text: 'Terms & Conditions', href: '' },
+            { text: 'Privacy Policy', href: '' },
+        ],
+    },
+];
+
+export const FOOTER_LINKS = [
+    { href: 'https://github.com/', iconName: 'github' },
+    { href: 'https://x.com/i/flow/login', iconName: 'twitter' },
+    { href: 'https://www.linkedin.com/', iconName: 'linkedin' },
+    { href: 'https://www.youtube.com/', iconName: 'youtube' },
+];
+
+export const PRICING_PLANS = [
+    {
+        id: 1,
+        type: "Started",
+        price: "$0/ Month",
+        tag: "Free",
+        tagClass: "bg-semi-transparent-gray",
+        iconName: "rocket",
+        iconClass: "bg-jet-black",
+        features: [
+            "$1 free credit",
+            "Free unlimited universal API calls",
+            "$0.0005 / request for Smart Routing",
+            "$0.0005 / request for Tracing",
+            "LLM observability",
+            "Automatic failover and retry",
+            "Automatic load balancing",
+            "Role-Based Access Control",
+            "Prompt Caching",
+            "Key & Provider management",
+            "20 days log retention",
+            "Community support",
+        ],
+        buttonText: "Get Started",
+        buttonClass: "bg-orange",
+    },
+    {
+        id: 2,
+        type: "PRO",
+        price: "$100/ Month",
+        tag: "POPULAR",
+        tagClass: "bg-vivid-green-transparent",
+        iconName: "dash",
+        iconClass: "bg-orange",
+        features: [
+            "$1 free credit",
+            "Free unlimited universal API calls",
+            "20% cheaper per-request fees",
+            "$0.0004 / request for Smart Routing",
+            "$0.0004 / request for Tracing",
+            "$0.0008 / request for Router Training & Evaluations",
+            "LLM observability",
+            "Automatic failover and retry",
+            "Automatic load balancing",
+            "Role-Based Access Control",
+            "Prompt Caching",
+            "60 Days log retention",
+            "Key & Provider Management",
+            "Unlimited Organizations",
+            "Dedicated support channel",
+        ],
+        buttonText: "Get Started",
+        buttonClass: "bg-orange",
+    },
+];
+
 

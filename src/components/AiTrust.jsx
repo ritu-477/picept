@@ -6,7 +6,7 @@ import trustImg from '../assets/images/webp/ai-trust-image.webp'
 
 const AiTrust = () => {
   return (
-      <div className='bg-trust bg-cover bg-no-repeat bg-center md:pt-[53px] pb-8'>
+      <div className='bg-trust bg-cover bg-no-repeat bg-center md:pt-[53px] pb-8 bg-ink-black'>
           <div className='container lg:pt-[124px] md:pt-20 sm:pt-16 pt-6 lg:pb-[104px] md:pb-20 sm:pb-16 pb-6'>
               <div className='flex lg:flex-row flex-wrap -mx-3 justify-between flex-col-reverse'>
                   <div className='lg:w-[57.33%] px-3 w-full flex flex-col justify-center max-lg:items-center max-lg:mt-5'>

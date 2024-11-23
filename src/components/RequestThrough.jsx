@@ -6,7 +6,7 @@ import starEllipse from '../assets/images/webp/star-ellipse.webp'
 
 const RequestThrough = () => {
     return (
-        <div className='lg:pt-[77px] md:pt-14 sm:pt-12 pt-6 sm:pb-12 pb-6 relative' id='pricing'>
+        <div className='lg:pt-[77px] md:pt-14 sm:pt-12 pt-6 sm:pb-12 pb-6 relative bg-ink-black' id='pricing'>
               <img className='absolute lg:block hidden -z-10 left-1 top-[45%] max-w-[67.22px]' src={starEllipse} alt="star-ellipse" />
             <div className='container'>
                 <div className="max-w-[1140px] bg-requested bg-cover bg-no-repeat bg-center rounded-[32px] border-light-gray border lg:p-[41px_75px_12px_75px] md:p-[41px_48px_12px_48px] p-[24px_32px_12px_32px]">

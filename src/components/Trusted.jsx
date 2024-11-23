@@ -3,7 +3,7 @@ import { CONTINUE_SLIDER_DATA } from '../utils/Helper';
 
 const Trusted = () => {
   return (
-    <div className="pt-[30px] lg:pb-[77px] md:pb-14 sm:pb-12 pb-6">
+    <div className="pt-[30px] lg:pb-[77px] md:pb-14 sm:pb-12 pb-6 bg-ink-black">
       <div className="overflow-hidden mx-auto max-w-[1920px]">
         <h3 className="lg:text-5xl sm:text-4xl text-2xl text-primary-white text-center">Trusted By Teams at</h3>
         <div className="mt-12 flex slider-container">

@@ -5,7 +5,6 @@ import Header from './common/Header';
 import AiTrust from './components/AiTrust';
 import AiWithout from './components/AiWithout';
 import EndToEnd from './components/EndToEnd';
-import GetTouch from './components/GetTouch';
 import Hero from './components/Hero';
 import Mission from './components/Mission';
 import PiceptDelivers from './components/PiceptDelivers';
@@ -16,6 +15,7 @@ import SmartRouting from './components/SmartRouting';
 import Trusted from './components/Trusted';
 import TrustThrough from './components/TrustThrough';
 import Unmatched from './components/Unmatched';
+import GetTouch from './components/GetTouch';
 
 
 function App() {
@@ -31,12 +31,11 @@ function App() {
       <Unmatched />
       <AiTrust />
       <EndToEnd />
-      {/* <PiceptDelivers /> */}
-      {/* <Trusted/>
+      <PiceptDelivers />
       <PiceptRated />
       <PiceptPricing />
       <GetTouch />
-      <Footer/> */}
+      <Footer/> 
     </>
   );
 }

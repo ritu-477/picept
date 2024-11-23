@@ -33,8 +33,8 @@ module.exports = {
         'border-primary-gray': "#BBBBBB4D",
         'light-orange': "#281914  ",
         'light-white': "#FFFFFF05",
-        'transparent-black': "#BBBBBB05",
-        'button-bg': "#2C2B2B",
+        'transparent-black': "#BBBBBB05", 
+        'button-bg': "#2C2B2B", 
         'choose-bg': "#161616",
         'transparent-gray': "#393939",
         'tab-button': "#4B4B4B",
@@ -43,6 +43,13 @@ module.exports = {
         'midnight-black': "#292828", 
         'border-midnight': "#555554",
         'charcoal-black': "#171616",
+        'charcoal-gray': "#575757",
+        'jet-black': "#232323", 
+        'semi-transparent': "#FFFFFF1F",
+        'semi-transparent-gray': "#ECECEC3D",
+        'semi-transparent-white': "#fafafa",
+        'vivid-green': "#24D830", 
+        'vivid-green-transparent': "#24D8303D",
 
       },
 
@@ -70,7 +77,7 @@ module.exports = {
         'trust': "url('./assets/images/webp/trusted-through-bg.webp')",
         'unmatched': "url('./assets/images/webp/unmatched-bg.webp')",
         'trust': "url('./assets/images/webp/ai-trust-bg.webp')",
-
+        'delivers': "url('./assets/images/webp/delivers-bg.webp')",
       },
 
       boxShadow: {

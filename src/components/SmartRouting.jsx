@@ -31,7 +31,7 @@ const SmartRouting = () => {
   };
 
   return (
-    <div className='lg:pt-[70px] md:pt-14 sm:pt-12 pt-6 lg:pb-14 sm:pb-12 pb-6'>
+    <div className='lg:pt-[70px] md:pt-14 sm:pt-12 pt-6 lg:pb-14 sm:pb-12 pb-6 bg-ink-black'>
       <div className='container'>
         <div className='lg:py-[66px] md:py-12 sm:py-8 py-6 px-[22px] rounded-[32px] bg-light-white'>
           <div className='flex flex-row flex-wrap mt-8 -mx-3'>

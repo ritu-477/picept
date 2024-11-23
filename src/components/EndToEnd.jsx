@@ -8,7 +8,7 @@ import aiEllipse from '../assets/images/webp/mission-ellipse.webp'
 
 const EndToEnd = () => {
   return (
-      <div className='pb-9 relative'>
+      <div className='pb-9 relative bg-ink-black'>
           <img className='absolute left-0 -z-10 max-w-[411px] lg:block hidden h-[411px] top-[5%]' src={aiEllipse} alt="ai-ellipse" />
           <img className='absolute lg:block hidden -z-10 left-5 top-[58%] max-w-[67.22px]' src={starEllipse} alt="star-ellipse" />
           <div className='container'>
