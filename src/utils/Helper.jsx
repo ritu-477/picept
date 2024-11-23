@@ -10,10 +10,10 @@ import complyImg from '../assets/images/webp/comply-image.webp';
 import monitorImg from '../assets/images/webp/monitor-image.webp';
 import evaluationImg from '../assets/images/webp/evaluation-image.webp';
 import saasImg from '../assets/images/webp/saas-image.webp'
-import apiImg from '../assets/images/webp/saas-image.webp'
-import aiPerformanceImg from '../assets/images/webp/saas-image.webp'
-import aiDeliversImg from '../assets/images/webp/saas-image.webp'
-import openFoldersImg from '../assets/images/webp/saas-image.webp'
+import apiImg from '../assets/images/webp/api-delivers.webp'
+import aiPerformanceImg from '../assets/images/webp/ai-performance.webp'
+import aiDeliversImg from '../assets/images/webp/ai-sleeps.webp'
+import openFoldersImg from '../assets/images/webp/opening-folder.webp'
 
 
 export const NAV_DATA_LINK = [
@@ -79,6 +79,7 @@ export const CONTINUE_SLIDER_DATA = [
     { src: streeImg, alt: "Stree Logo", maxWidth: "72.68px" },
     { src: ciscoImg, alt: "Cisco Logo", maxWidth: "145px" },
 ];
+
 export const MISSION_CONTROL_CARDS = [
     {
         icon: "monitorEvery",
@@ -222,38 +223,39 @@ export const TAB_DATA = [
 
 export const PICEPT_DELIVER_DATA_LIST = [
     {
-        heading: "Blazing fast & efficient Routing",
+        text: "Blazing fast & efficient Routing",
         title: "Blazing fast & efficient Routing",
         description:
-            "Our service executes in just 10ms, slashes API costs by up to 99%, boosts speed, and reduces overall latency",
-        image: saasImg ,
+            "Our service executes in just 10ms, slashes API costs by up to 99%, boosts speed, and reduces overall latency.",
+        image: saasImg,
     },
+
     {
-        heading: "Trust Through Intelligence",
+        text: "Trust Through Intelligence",
         title: "Trust Through Intelligence",
         description:
-            "Deploy complaint AI in minutes, not months. Reduce complaince overhead by 90%. ",
+            "Deploy compliant AI in minutes, not months. Reduce compliance overhead by 90%.",
         image: openFoldersImg,
     },
     {
-        heading: "One API, Unlimited Potential",
+        text: "One API, Unlimited Potential",
         title: "One API, Unlimited Potential",
         description:
-            "Access 100+ Al models through a single endpoint. Mange Access at user and organization level and access new models at no time.",
+            "Access 100+ AI models through a single endpoint. Manage access at user and organization levels and access new models in no time.",
         image: apiImg,
     },
     {
-        heading: "Al Performance, Guaranteed",
-        title: "Al Performance, Guaranteed",
+        text: "AI Performance, Guaranteed",
+        title: "AI Performance, Guaranteed",
         description:
             "Detect issues, validate outputs, and ensure quality automatically.",
         image: aiPerformanceImg,
     },
     {
-        heading: "Al Observability That Never Sleeps",
-        title: "Al Observability That Never Sleeps",
+        text: "AI Observability That Never Sleeps",
+        title: "AI Observability That Never Sleeps",
         description:
-            "Full visibility into Al operations. Track performance, costs, and compliance in real-time.",
+            "Full visibility into AI operations. Track performance, costs, and compliance in real-time.",
         image: aiDeliversImg,
     },
 ];
@@ -329,6 +331,7 @@ export const FORM_DATA = [
         placeholder: 'Enter your first name',
         validation: { required: 'First name is required' },
     },
+
     {
         name: 'lastName',
         label: 'Last Name',
@@ -336,6 +339,7 @@ export const FORM_DATA = [
         placeholder: 'Enter your last name',
         validation: { required: 'Last name is required' },
     },
+
     {
         name: 'email',
         label: 'Email',
@@ -349,6 +353,7 @@ export const FORM_DATA = [
             },
         },
     },
+
     {
         name: 'message',
         label: 'Message',

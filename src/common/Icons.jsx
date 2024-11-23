@@ -211,6 +211,22 @@ const Icon = (props) => {
             </svg>
 
         ),
+        inActiveTabIcon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#7B767D" fill-opacity="0.1" />
+            <circle cx="12.0003" cy="11.9999" r="9.50034" fill="#7B777E" fill-opacity="0.2" />
+            <circle cx="12.0003" cy="12.0007" r="7.00025" fill="#7B767D" />
+        </svg>
+        ),
+        ActiveIcon: (
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#EF5B24" fill-opacity="0.1" />
+                <circle cx="12.0003" cy="11.9999" r="9.50034" fill="#EF5B24" fill-opacity="0.2" />
+                <circle cx="12.0003" cy="12.0007" r="7.00025" fill="#EF5B24" />
+            </svg>
+
+
+        ),
     };
  
     return (

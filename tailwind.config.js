@@ -67,8 +67,9 @@ module.exports = {
         'custom-4xl': "44.8px",
         'custom-5xl': "50.4px",
         'custom-6xl': "64.8px",
-        'custom-7xl': "72px",
-        'custom-8xl': "84px",
+        'custom-7xl': "67.2px",
+        'custom-8xl': "72px",
+        'custom-9xl': "84px",
       },
 
       backgroundImage: {
