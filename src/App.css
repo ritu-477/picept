@@ -99,6 +99,10 @@ body {
   transition: 0.3s;
 }
 
+.svg-orange {
+  fill: #EF5B24;
+}
+
 @media(min-width:768px) {
   .slider-container {
     width: calc(164px + 395px + 127px + 188px + 127px + 199px + 265px + 164px + 395px + 127px + 188px + 127px + 199px + 265px);

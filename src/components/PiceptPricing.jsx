@@ -74,8 +74,7 @@ const PiceptPricing = () => {
                                 </div>
                                 <div className="sm:px-6 px-5 py-6 flex items-center justify-center">
                                     <button
-                                        className={`rounded-full text-primary-white py-[14px] px-20 sm:px-[150px] xl:px-[209px] hover:bg-white hover:text-orange duration-700 ${plan.buttonClass}`}
-                                    >
+                                        className={`rounded-full text-primary-white py-[14px] px-20 sm:px-[150px] xl:px-[200px] hover:bg-white hover:text-orange duration-700 ${plan.buttonClass}`}>
                                         {plan.buttonText}
                                     </button>
                                 </div>
