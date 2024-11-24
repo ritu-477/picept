@@ -5,7 +5,7 @@ import PrimaryPara from '../common/PrimaryPara';
 import CommonButton from '../common/CommonButton';
 import getEllipse from '../assets/images/webp/get-touch-ellipse.webp';
 import Icon from '../common/Icons';
-import {FORM_DATA} from '../utils/Helper'
+import { FORM_DATA } from '../utils/Helper'
 
 const GetTouch = () => {
     const {
@@ -17,7 +17,7 @@ const GetTouch = () => {
 
     const onSubmit = (data) => {
         console.log('Form Data:', data);
-        reset(); 
+        reset();
     };
 
     return (
@@ -48,7 +48,7 @@ const GetTouch = () => {
                     <div className="lg:w-[46.15%] px-3 w-full max-lg:mt-5 flex flex-col max-lg:items-center">
                         <form
                             onSubmit={handleSubmit(onSubmit)}
-                            className="rounded-[32px] w-full shadow-custom5xl bg-dark-gray lg:py-8 lg:px-12 sm:py-6 sm:px-8 py-4 px-6 border border-border-primary-gray"
+                            className="rounded-[32px] w-full shadow-custom5xl bg-dark-gray lg:py-8 lg:px-12 sm:py-6 sm:px-8 py-4 px-5 border border-border-primary-gray"
                         >
                             {FORM_DATA.map((field) => (
                                 <div key={field.name} className="flex flex-col gap-2 mt-[14px]">
@@ -68,8 +68,7 @@ const GetTouch = () => {
                                                 {...register(field.name, field.validation)}
                                                 className="text-lg w-full font-normal text-primary-white placeholder:text-primary-white opacity-70 bg-transparent outline-none"
                                                 type={field.type}
-                                                placeholder={field.placeholder}
-                                            />
+                                                placeholder={field.placeholder} />
                                         )}
                                     </div>
                                     {errors[field.name] && (
@@ -83,8 +82,7 @@ const GetTouch = () => {
                                 <CommonButton
                                     type="submit"
                                     className="bg-orange hover:bg-white hover:text-orange duration-700"
-                                    text={'Submit Now'}
-                                />
+                                    text={'Submit Now'} />
                             </div>
                         </form>
                     </div>

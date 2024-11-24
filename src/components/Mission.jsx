@@ -7,12 +7,12 @@ import missionStar from '../assets/images/webp/mission-star.webp'
 
 const Mission = () => {
   return (
-    <div className='pt-10 md:pb-12 sm:pb-8 pb-6 lg:pb-[70px] relative bg-ink-black' id='blogs'>
-      <img className='absolute lg:block hidden left-0 top-0 max-w-[350px] h-[411px] -z-10 w-full' src={missionEllipse} alt="mission-ellipse" />
-      <img className='absolute -z-10 right-0 bottom-[120px] lg:block hidden max-w-[100px]' src={missionStar} alt="mission-star" />
+    <div className='pt-10 md:pb-12 sm:pb-8 lg:pb-[70px] relative bg-ink-black' id='blogs'>
+      <img className='absolute lg:block hidden left-0 top-0 max-w-[350px] h-[411px] w-full' src={missionEllipse} alt="mission-ellipse" />
+      <img className='absolute right-0 bottom-[120px] lg:block hidden max-w-[100px]' src={missionStar} alt="mission-star" />
       <div className='container'>
         <CommonHeading className='text-center mx-auto max-w-[650px]' text={'Mission Control for Your AI Operations '} />  
-        <div className='flex flex-wrap flex-row -mx-3 justify-center pt-12'>
+        <div className='flex flex-wrap flex-row -mx-3 justify-center pt-12 relative z-10'>
           {MISSION_CONTROL_CARDS.map((obj, index) => (
             <div key={index} className='lg:w-[33.33%] sm:w-[50%] w-full px-3 flex justify-center mb-6'>
               <div className='bg-dark-gray hover:bg-primary-gray p-5 rounded-[20px] w-full border border-primary-gray transition duration-700 hover:shadow-[0px_-4px_4px_0px_#FFFFFF40]'>

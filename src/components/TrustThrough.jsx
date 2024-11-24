@@ -3,12 +3,12 @@ import PrimaryPara from '../common/PrimaryPara'
 import Icon from '../common/Icons'
 import { useState } from 'react'
 import { TAB_CONTENT } from '../utils/Helper'
-import  trustStar from '../assets/images/webp/trust-star.webp'
+import trustStar from '../assets/images/webp/trust-star.webp'
 
 const TrustThrough = () => {
-  const [activeTab, setActiveTab] = useState(0); 
+  const [activeTab, setActiveTab] = useState(0);
   return (
-    <div className='bg-trust bg-cover bg-no-repeat bg-center bg-light-white relative'>
+    <div className='bg-trust-through max-lg:bg-cover lg:bg-[length:100%_100%] bg-no-repeat bg-center bg-light-white relative'>
       <img className='absolute lg:block hidden left-[28px] max-w-[61.77px] top-[165px]' src={trustStar} alt="trust-star" />
       <div className='container lg:py-[100px] md:py-20 sm:py-14 py-6'>
         <div className='sm:py-9 sm:px-7 py-6 px-4 rounded-[32px] bg-light-white backdrop-blur-[20.6px]'>
@@ -26,16 +26,13 @@ const TrustThrough = () => {
                 key={index}
                 onClick={() => setActiveTab(index)}
                 className={`font-normal lg:text-xl text-base justify-center items-center flex gap-2 ${activeTab === index
-                    ? 'bg-button-bg text-primary-white rounded-[63px] border border-border-primary-gray'
+                  ? 'bg-button-bg text-primary-white rounded-[63px] border border-border-primary-gray'
                   : 'text-grey'
                   } ${tab.title === 'Evaluation API' ? 'py-[10px] px-6 text-nowrap' : 'xl:px-12 px-4 md:px-4 py-3'
-                  }`} 
-              >
+                  }`}>
                 <Icon
-                  svgClass={`${activeTab === index ? 'path-orange' : 'path-grey'
-                    }`}
-                  iconName={tab.icon}
-                />  
+                  className={`${activeTab === index ? 'path-orange' : 'path-grey'
+                    }`} iconName={tab.icon}/>
                 {tab.title}
               </button>
             ))}

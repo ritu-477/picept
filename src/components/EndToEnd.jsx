@@ -8,11 +8,11 @@ import aiEllipse from '../assets/images/webp/mission-ellipse.webp'
 
 const EndToEnd = () => {
   return (
-      <div className='pb-9 relative bg-ink-black'>
-          <img className='absolute left-0 -z-10 max-w-[411px] lg:block hidden h-[411px] top-[5%]' src={aiEllipse} alt="ai-ellipse" />
-          <img className='absolute lg:block hidden -z-10 left-5 top-[58%] max-w-[67.22px]' src={starEllipse} alt="star-ellipse" />
+      <div className='pb-9 relative bg-ink-black -mt-8'>
+          <img className='absolute left-0 max-w-[411px] lg:block hidden h-[411px] top-[5%]' src={aiEllipse} alt="ai-ellipse" />
+          <img className='absolute lg:block hidden left-5 top-[58%] max-w-[67.22px]' src={starEllipse} alt="star-ellipse" />
           <div className='container'>
-              <div className='max-w-[1140px] rounded-[32px] bg-end-to-end bg-ink-black py-6 px-4 sm:py-8 md:py-12 sm:px-6 lg:p-[64px_24px_57px_24px]'>
+              <div className='max-w-[1140px] relative z-10 rounded-[32px] bg-end-to-end bg-ink-black py-6 px-4 sm:py-8 md:py-12 sm:px-6 lg:p-[64px_24px_57px_24px]'>
                   <div className='flex flex-row flex-wrap -mx-3 justify-between'>
                       <div className='lg:w-1/2 px-3 w-full flex flex-col justify-center max-lg:items-center max-lg:mt-5'>
                           <CommonHeading className='lg:max-w-[498px] w-full max-lg:text-center' text={'End-to-end visibility of your LLM applications'} />

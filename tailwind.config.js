@@ -75,7 +75,7 @@ module.exports = {
       backgroundImage: {
         'hero': "url('./assets/images/webp/hero-bg.webp')",
         'requested': "url('./assets/images/webp/requested-bg.webp')",
-        'trust': "url('./assets/images/webp/trusted-through-bg.webp')",
+        'trust-through': "url('./assets/images/webp/trusted-through-bg.webp')",
         'unmatched': "url('./assets/images/webp/unmatched-bg.webp')",
         'trust': "url('./assets/images/webp/ai-trust-bg.webp')",
         'delivers': "url('./assets/images/webp/delivers-bg.webp')",

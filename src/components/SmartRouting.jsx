@@ -8,7 +8,7 @@ import openImg from '../assets/images/webp/open-ai.webp';
 import nodeImg from '../assets/images/webp/open-node.webp';
 
 const SmartRouting = () => {
-  const [activeTab, setActiveTab] = useState('PythonSDK'); 
+  const [activeTab, setActiveTab] = useState('PythonSDK');
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -35,7 +35,7 @@ const SmartRouting = () => {
       <div className='container'>
         <div className='lg:py-[66px] md:py-12 sm:py-8 py-6 px-[22px] rounded-[32px] bg-light-white'>
           <div className='flex flex-row flex-wrap mt-8 -mx-3'>
-            <div className='lg:w-1/2 px-3 w-full flex flex-col justify-center max-lg:items-center'>
+            <div className='lg:w-1/2 px-3 w-full flex flex-col max-lg:items-center'>
               <CommonHeading className='lg:max-w-[480px] w-full max-lg:text-center' text={'Smart Routing Included'} />
               <PrimaryPara
                 className='pt-4 lg:max-w-[480px] max-lg:text-center'

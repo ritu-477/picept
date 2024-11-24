@@ -5,12 +5,11 @@ import CommonButton from '../common/CommonButton'
 import heroImg from '../assets/images/webp/hero-image.webp'
 import heroStar from '../assets/images/webp/hero-star.webp'
 
-
 const Hero = () => {
   return (
       <div className='bg-hero bg-ink-black bg-cover bg-no-repeat bg-center'>
           <Header />
-          <div className='xl:pt-[149.91px] lg:pt-32 md:pt-24 sm:pt-16 pt-14 xl:pb-[114px] lg:pb-20 md:pb-14 sm:pb-12 pb-6 relative max-w-[1920px]'>
+          <div className='xl:pt-[149.91px] lg:pt-32 md:pt-24 sm:pt-16 pt-14 xl:pb-[150px] lg:pb-20 md:pb-14 sm:pb-12 pb-6 relative max-w-[1920px]'>
               <img className='absolute lg:block hidden bottom-0 right-0 max-w-[69.4px] w-full' src={heroStar} alt="hero-star" />
               <div className='container'>
                   <div className='flex flex-col max-xl:justify-center max-xl:items-center'>

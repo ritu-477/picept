@@ -2,7 +2,8 @@ import React from 'react'
 import footerLogo from '../assets/images/webp/footer-logo.webp'
 import Icon from './Icons'
 import { FOOTER_DATA } from '../utils/Helper'
-import {FOOTER_LINKS} from '../utils/Helper'
+import { FOOTER_LINKS } from '../utils/Helper'
+import BackToTop from '../components/BackToTop'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +11,6 @@ const Footer = () => {
     <div className="bg-black">
       <div className="container lg:pt-[90px] md:pt-16 sm:pt-12 pt-6">
         <div className="flex flex-col lg:flex-row gap-7 justify-between">
-          {/* Logo and Social Links */}
           <div className="flex flex-col">
             <img
               className="sm:max-w-[257.68px] max-w-[200px]"
@@ -31,8 +31,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Footer Sections */}
           <div className="flex max-w-[612px] w-full justify-between flex-wrap gap-x-3 gap-y-6 sm:gap-6 md:gap-8 lg:gap-12 xl:gap-[113px]">
             {FOOTER_DATA.map(({ title, links }, sectionIndex) => (
               <div key={sectionIndex} className="flex flex-col max-sm:w-[40%]">
@@ -50,14 +48,13 @@ const Footer = () => {
             ))}
           </div>
         </div>
-
-        {/* Footer Bottom */}
         <div className="lg:pt-20 md:pt-16 sm:pt-12 pt-8 pb-6">
           <p className="text-base font-normal text-grey text-center">
             Copyright opendoc.ai {currentYear} | All Rights Reserved
           </p>
         </div>
       </div>
+      <BackToTop />
     </div>
   )
 }

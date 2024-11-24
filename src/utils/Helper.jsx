@@ -15,7 +15,6 @@ import aiPerformanceImg from '../assets/images/webp/ai-performance.webp'
 import aiDeliversImg from '../assets/images/webp/ai-sleeps.webp'
 import openFoldersImg from '../assets/images/webp/opening-folder.webp'
 
-
 export const NAV_DATA_LINK = [
     { label: "Pricing", href: "#pricing" },
     { label: "Blogs", href: "#blogs" },
@@ -454,5 +453,3 @@ export const PRICING_PLANS = [
         buttonClass: "bg-orange",
     },
 ];
-
-

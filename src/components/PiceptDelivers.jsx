@@ -14,9 +14,24 @@ const PiceptDelivers = () => {
     const progressSteps = [10, 30, 60, 80, 100];
     const getProgressWidth = () => `${progressSteps[activeTab]}%`;
 
+    const textWidth = [
+        "xl:!w-[163px]",
+        "xl:!w-[135px]",
+        "xl:!w-[173px]",
+        "xl:!w-[136px]",
+        "xl:!w-[163px]",
+    ];
+    const paraWidth = [
+        "xl:max-w-[452px]",
+        "xl:max-w-[452px]",
+        "xl:max-w-[496px]",
+        "xl:max-w-[452px]",
+        "xl:max-w-[467px]",
+    ];
+
     const handleTabClick = (index) => {
         setActiveTab(index);
-        swiperContentRef.current?.slideTo(index);
+        swiperContentRef.current?.slideTo(index)
     };
 
     const handleSlideChange = (swiper) => {
@@ -47,12 +62,11 @@ const PiceptDelivers = () => {
                         {PICEPT_DELIVER_DATA_LIST.map((tab, i) => (
                             <SwiperSlide key={i}>
                                 <div
-                                    className={`flex items-center cursor-pointer py-2 px-3 md:px-4 ${activeTab === i ? "text-opacity-100" : "text-opacity-70"
-                                        }`}
+                                    className={`flex items-center mb-2 cursor-pointer ${activeTab === i ? "text-opacity-100" : "text-opacity-70"}`}
                                     onClick={() => handleTabClick(i)}>
                                     <Icon iconName={activeTab === i ? "ActiveIcon" : "inActiveTabIcon"} />
                                     <p
-                                        className={`ml-2 text-base font-bold ${activeTab === i ? "text-grey" : "text-grey text-opacity-70"}`}>
+                                        className={`w-fit text-base font-bold ${textWidth[i]} sm:!text-xl ${activeTab === i ? "!text-grey !text-opacity-100" : "!text-grey !text-opacity-70"}`}>
                                         {tab.title}</p>
                                 </div>
                             </SwiperSlide>
@@ -78,15 +92,12 @@ const PiceptDelivers = () => {
                         }}>
                         {PICEPT_DELIVER_DATA_LIST.map((tab, i) => (
                             <SwiperSlide key={i}>
-                                <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:p-[24px_24px_24px_36px] p-5 border rounded-2xl bg-white bg-opacity-10 border-gray-300">
+                                <div className="flex flex-col lg:flex-row items-center justify-between gap-5 lg:p-[24px_24px_24px_36px] p-5 border rounded-[32px] bg-white bg-opacity-10 border-border-primary-gray">
                                     <div className="text-center lg:text-left">
-                                        <h3 className="lg:text-5xl lg:leading-custom-7xl sm:text-4xl text-3xl font-medium text-primary-white">
-                                            {tab.text}</h3>
-                                        <p className="mt-4 text-xl text-gray-300 max-w-[500px]">
-                                            {tab.description}</p>
+                                        <h3 className="lg:text-5xl lg:leading-custom-7xl sm:text-4xl text-3xl font-medium text-primary-white">{tab.text}</h3>
+                                        <p className={`mt-2 sm:mt-4 sm:text-xl text-base font-bold text-grey max-lg:text-center max-w-[600px] ${paraWidth[i]}`}>{tab.description}</p>
                                     </div>
-                                    <img
-                                        className="max-w-full max-h-[240px] lg:w-[500px] rounded-[20px] border border-border-primary-gray" src={tab.image} alt={tab.title} />
+                                    <img className="max-w-full max-h-[240px] lg:w-[500px] rounded-[20px] border border-border-primary-gray" src={tab.image} alt={tab.title} />
                                 </div>
                             </SwiperSlide>
                         ))}

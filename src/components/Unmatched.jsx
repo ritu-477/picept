@@ -8,7 +8,7 @@ import unmatchedStar from '../assets/images/webp/unmatched-star.webp'
 import missionStar from '../assets/images/webp/mission-star.webp'
 
 const Unmatched = () => {
-  const [activeTab, setActiveTab] = useState(TAB_DATA[0].id); 
+  const [activeTab, setActiveTab] = useState(TAB_DATA[0].id);
 
   const handleTabClick = (id) => {
     setActiveTab(id);
@@ -40,8 +40,8 @@ const Unmatched = () => {
             ))}
           </div>
           <div className='flex flex-row flex-wrap -mx-3 lg:justify-between justify-center items-center'>
-  {activeTAB_DATA && (
-    <div className='lg:w-1/3 w-full flex-col flex justify-center items-center lg:items-start'>
+            {activeTAB_DATA && (
+              <div className='lg:w-1/3 w-full flex-col flex justify-center items-center lg:items-start'>
                 <div className='flex flex-col'>
                   <p className='text-4xl sm:text-2xl leading-custom-5xl font-normal lg:text-start text-center text-primary-white pb-4'>
                     {activeTAB_DATA.heading}
@@ -54,14 +54,14 @@ const Unmatched = () => {
                       </p>
                     </div>
                   ))}
-      </div>
-    </div>
-  )}
-  <div className='lg:w-1/2 w-full flex-col flex max-lg:justify-center max-lg:items-center mt-5'>
-    <p className='text-xl text-grey font-bold pb-4'>Quality V/S Price</p>
-    <img className='rounded-[32px] shadow-custom4xl w-full' src={unmatchedImg} alt='unmatched-image' />
-  </div>
-</div>
+                </div>
+              </div>
+            )}
+            <div className='lg:w-1/2 w-full flex-col flex max-lg:justify-center max-lg:items-center mt-5'>
+              <p className='text-xl text-grey font-bold pb-4'>Quality V/S Price</p>
+              <img className='rounded-[32px] shadow-custom4xl w-full' src={unmatchedImg} alt='unmatched-image' />
+            </div>
+          </div>
 
         </div>
       </div>
