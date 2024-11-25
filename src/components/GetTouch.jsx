@@ -21,7 +21,7 @@ const GetTouch = () => {
     };
 
     return (
-        <div className="lg:pt-[70px] md:pt-14 sm:pt-12 pt-6 lg:pb-[140px] md:pb-[112px] sm:pb-24 pb-12 relative bg-ink-black">
+        <div className="lg:pt-[70px] md:pt-14 sm:pt-12 pt-6 lg:pb-[140px] md:pb-[112px] sm:pb-24 pb-12 relative bg-ink-black" id='terms'>
             <img
                 className="absolute -z-10 top-[40%] w-full h-[712px] left-0 right-0"
                 src={getEllipse}

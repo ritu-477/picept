@@ -366,27 +366,27 @@ export const FORM_DATA = [
     {
         title: 'Product',
         links: [
-            { text: 'Smart Routing', href: '' },
-            { text: 'Universal API', href: '' },
-            { text: 'LLM Observability', href: '' },
+            { text: 'Smart Routing', href: '#smart' },
+            { text: 'Universal API', href: '#universal' },
+            { text: 'LLM Observability', href: '#llm' },
         ],
     },
     {
         title: 'Company',
         links: [
-            { text: 'Pricing', href: '' },
-            { text: 'About Us', href: '' },
-            { text: 'Blogs', href: '' },
-            { text: 'Book A Demo', href: '' },
+            { text: 'Pricing', href: '#pricing' },
+            { text: 'About Us', href: '#about' },
+            { text: 'Blogs', href: '#blogs' },
+            { text: 'Book A Demo', href: '#book' },
         ],
     },
     {
         title: 'Resources',
         links: [
-            { text: 'Careers', href: '' },
-            { text: 'Community', href: '' },
-            { text: 'Terms & Conditions', href: '' },
-            { text: 'Privacy Policy', href: '' },
+            { text: 'Careers', href: '#careers' },
+            { text: 'Community', href: '#community' },
+            { text: 'Terms & Conditions', href: '#terms' },
+            { text: 'Privacy Policy', href: '#/' },
         ],
     },
 ];

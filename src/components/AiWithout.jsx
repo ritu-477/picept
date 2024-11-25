@@ -7,7 +7,7 @@ import aiEllipse from '../assets/images/webp/mission-ellipse.webp'
 
 const AiWithout = () => {
   return (
-    <div className='lg:pt-[61px] md:pt-14 sm:pt-12 pt-6 md:pb-[68px] sm:pb-12 pb-6 relative bg-ink-black'>
+    <div className='lg:pt-[61px] md:pt-14 sm:pt-12 pt-6 md:pb-[68px] sm:pb-12 pb-6 relative bg-ink-black' id='careers'>
       <img className='absolute left-0 max-w-[411px] lg:block hidden h-[411px] top-[17%]' src={aiEllipse} alt="ai-ellipse" />
       <div className='w-[85px] h-[300px] lg:block hidden rounded-full blur-[100px] absolute right-0 top-[-10%] bg-orange bg-opacity-[55%]'></div>
       <div className='container'>

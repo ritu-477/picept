@@ -12,7 +12,7 @@ import starEllipse from '../assets/images/webp/star-ellipse.webp'
 
 const PiceptRated = () => {
     return (
-        <div className="lg:pt-[73px] md:py-14 sm:py-12 py-6 lg:pb-[70px] relative bg-ink-black">
+        <div className="lg:pt-[73px] md:py-14 sm:py-12 py-6 lg:pb-[70px] relative bg-ink-black" id="community">
             <img className='absolute lg:block hidden right-2 top-[20%] max-w-[67.22px]' src={starEllipse} alt="star-ellipse" />
             <div className='w-[90px] h-[300px] lg:block hidden rounded-full blur-[90px] absolute right-0 top-[-6%] bg-orange bg-opacity-[55%]'></div>
             <img src={unmatchedStar} className='absolute lg:block hidden left-[28px] top-[40%] max-w-[61px]' alt="unmatched-star" />

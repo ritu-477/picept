@@ -17,7 +17,7 @@ const Unmatched = () => {
   const activeTAB_DATA = TAB_DATA.find((tab) => tab.id === activeTab);
 
   return (
-    <div className='bg-unmatched bg-center bg-no-repeat bg-cover relative'>
+    <div className='bg-unmatched bg-center bg-no-repeat bg-cover relative' id='universal'>
       <img className='absolute right-0 bottom-[-17%] lg:block hidden max-w-[100px]' src={missionStar} alt="mission-star" />
       <img src={unmatchedStar} className='absolute lg:block hidden left-[28px] top-[65px] max-w-[61px]' alt="unmatched-star" />
       <div className='container pb-7  md:pt-14 sm:pt-12 pt-6 lg:pt-[72px]'>

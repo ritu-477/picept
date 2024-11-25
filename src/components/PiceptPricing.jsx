@@ -8,7 +8,7 @@ import aiEllipse from '../assets/images/webp/mission-ellipse.webp'
 
 const PiceptPricing = () => {
     return (
-        <div className="lg:py-[70px] md:py-14 sm:py-12 py-6 bg-ink-black relative">
+        <div className="lg:py-[70px] md:py-14 sm:py-12 py-6 bg-ink-black relative" id="pricing">
             <img className='absolute left-0 max-w-[411px] lg:block hidden h-[411px] top-0' src={aiEllipse} alt="ai-ellipse" />
             <div className="container">
                 <CommonHeading
