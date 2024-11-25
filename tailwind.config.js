@@ -49,7 +49,8 @@ module.exports = {
         'semi-transparent-gray': "#ECECEC3D",
         'semi-transparent-white': "#fafafa",
         'vivid-green': "#24D830", 
-        'vivid-green-transparent': "#24D8303D",
+        'vivid-green-transparent': "#24D8303D", 
+        'purple': "#BC89BD",
 
       },
 
